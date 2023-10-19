@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:Taxopark"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Background="LightYellow">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="217*"/>
+            <RowDefinition Height="212*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/image/taxi.png" Height="110" Grid.Column="1" Grid.Row="0" Margin="277,-3,19,110"/>
+        <TextBlock Width="250" Text="Taxopark" Foreground="Orange" FontSize="25" FontFamily="Wide Latin" Grid.ColumnSpan="2" Margin="290,26,0,148" HorizontalAlignment="Left"/>
+        <TextBlock Text="Логин:" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="30" Margin="150,112,0,0" FontFamily="Courier New"/>
+        <TextBox x:Name="login" Background="LightBlue" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="500"  FontSize="20" Margin="150,146,0,0" FontFamily="Courier New" Grid.ColumnSpan="2"/>
+        <TextBlock Text="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="30" FontFamily="Courier New" Margin="150,193,0,0" Grid.RowSpan="2"/>
+        <TextBox x:Name="parol" Background="LightBlue" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="500"  FontSize="20" FontFamily="Courier New" Grid.ColumnSpan="2" Margin="150,26,0,0"/>
+        <Button  x:Name="avtor" Content="Авторизироваться" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Height="35" Width="400" Foreground="Orange" FontSize="25" FontWeight="SemiBold" Margin="200,0,0,0" FontFamily="Courier New"   Background="GreenYellow" Click="avtor_Click"/>
+        <Button  x:Name="rega" Content="Регистрация" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="400" Foreground="Orange" FontSize="25" FontWeight="SemiBold" Margin="200,149,0,0" FontFamily="Courier New"   Background="GreenYellow" Click="rega_Click"/>
     </Grid>
 </Window>
